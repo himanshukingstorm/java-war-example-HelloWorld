@@ -35,9 +35,7 @@ pipeline {
             }
                 
             steps {
-               
-                sh "curl -T target/sparkjava-hello-world-1.0.war ${TOMCAT_URL}/manager/text/deploy?path=/sparkjava-hello-world-1.0 -u ${TOMCAT_USER}:${TOMCAT_PASSWORD}"
-            }
+               }
         }
     }
 }
