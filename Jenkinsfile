@@ -35,6 +35,7 @@ pipeline {
                 
         }
     }
+    }
        post{
         success{
             mail to: "anonymous10star@gmail.com",
