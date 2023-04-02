@@ -35,7 +35,7 @@ pipeline {
             }
                 
             steps {
-                sh 'mvn deploy'
+               
                 sh "curl --upload-file /home/ubuntu/Projects/java-war-example-HelloWorld/target*.war ${TOMCAT_URL}/manager/deploy?path=sparkjava-hello-world-1.0 -u ${TOMCAT_USER}:${TOMCAT_PASSWORD}"
             }
         }
