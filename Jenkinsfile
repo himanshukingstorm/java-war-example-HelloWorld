@@ -36,7 +36,7 @@ pipeline {
                 
             steps {
                
-                sh "curl --upload-file /var/lib/jenkins/workspace/adhukara_Java_Project_Production/target/sparkjava-hello-world-1.0.war ${TOMCAT_URL}/manager/text/deploy?path=//var/lib/tomcat9/webapps/target/sparkjava-hello-world-1.0.war -u ${TOMCAT_USER}:${TOMCAT_PASSWORD}"
+                sh "curl --upload-file /var/lib/jenkins/workspace/adhukara_Java_Project_Production/target/sparkjava-hello-world-1.0.war ${TOMCAT_URL}/manager/text/deploy?path=/var/lib/tomcat9/webapps/target/sparkjava-hello-world-1.0.war -u ${TOMCAT_USER}:${TOMCAT_PASSWORD}"
             }
         }
     }
