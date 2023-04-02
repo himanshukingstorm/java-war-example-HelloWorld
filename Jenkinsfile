@@ -15,9 +15,9 @@ pipeline {
         }
       stage('Build') {
             when {
-                
-                    branch 'production'
-            
+                branch 'production'
+                    branch 'testing'
+                    branch 'development'
             }
             steps {
                 sh 'mvn package'
