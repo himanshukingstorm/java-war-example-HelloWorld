@@ -32,7 +32,7 @@ pipeline {
                 
             steps {
                 script {
-          deploy adapters: [tomcat9(credentialsId: 'test', url: 'http://3.0.176.113:8080/')], contextPath: '', onFailure: false, war: 'target/*.war' 
+          deploy adapters: [tomcat9(credentialsId: 'test', url: 'http://54.255.136.122:8080/')], contextPath: '', onFailure: false, war: 'target/*.war' 
                }
                 
         }
